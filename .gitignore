@@ -1,0 +1,6 @@
+# ignore pisg config
+.cfg
+
+# ignore sh files
+.sh
+
