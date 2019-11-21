@@ -1,0 +1,1635 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>#Nightaudit @ Snoonet stats by Vault108</title>
+<style type="text/css" title="default">
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #0b407a;
+}
+a:visited {
+	color: #0b407a;
+}
+a:hover {
+	text-decoration: underline;
+	color: #0b407a;
+}
+a.background {
+	text-decoration: none;
+}
+a.background:link {
+	color: #0b407a;
+}
+a.background:visited {
+	color: #0b407a;
+}
+a.background:hover {
+	text-decoration: underline;
+	color: #0b407a;
+}
+
+body {
+	background-color: #dedeee;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 13px;
+	color: black;
+}
+
+#green-h {
+	height: 15px;
+	background-repeat: repeat-x;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA8AgMAAADanzhpAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAFElEQVQI12NoYMAHHfBC/OAAPggA1jQWgUt+qs4AAAAASUVORK5CYII=) 0px 0px; }
+#red-h {
+	height: 15px;
+	background-repeat: repeat-x;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA8AgMAAADanzhpAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAFElEQVQI12NoYMAHHfBC/OAAPggA1jQWgUt+qs4AAAAASUVORK5CYII=) 0px -15px; }
+#yellow-h {
+	height: 15px;
+	background-repeat: repeat-x;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA8AgMAAADanzhpAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAFElEQVQI12NoYMAHHfBC/OAAPggA1jQWgUt+qs4AAAAASUVORK5CYII=) 0px -30px; }
+#blue-h {
+	height: 15px;
+	background-repeat: repeat-x;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA8AgMAAADanzhpAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAFElEQVQI12NoYMAHHfBC/OAAPggA1jQWgUt+qs4AAAAASUVORK5CYII=) 0px -45px; }
+
+#green-v {
+	width: 15px;
+	background-repeat: repeat-y;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAABAgMAAAD/diWSAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAGUlEQVQI12NYtWrVytDQ0AAGBgb7////AwA3TAczYjzlogAAAABJRU5ErkJggg==) 0px 0px; }
+#red-v {
+	width: 15px;
+	background-repeat: repeat-y;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAABAgMAAAD/diWSAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAGUlEQVQI12NYtWrVytDQ0AAGBgb7////AwA3TAczYjzlogAAAABJRU5ErkJggg==) -15px 0px; }
+#yellow-v {
+	width: 15px;
+	background-repeat: repeat-y;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAABAgMAAAD/diWSAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAGUlEQVQI12NYtWrVytDQ0AAGBgb7////AwA3TAczYjzlogAAAABJRU5ErkJggg==) -30px 0px; }
+#blue-v {
+	width: 15px;
+	background-repeat: repeat-y;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAABAgMAAAD/diWSAAAADFBMVEXMzDPMMzNmzDMzZv+sVPgxAAAAGUlEQVQI12NYtWrVytDQ0AAGBgb7////AwA3TAczYjzlogAAAABJRU5ErkJggg==) -45px 0px; }
+
+
+td {
+	border-radius: 5px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 13px;
+	color: black;
+	text-align: left;
+}
+.male, .male a {
+	color: #0000DD;
+}
+.female, .female a {
+	color: #DD3366;
+}
+.bot, .bot a {
+	color: #00FFFF;
+}
+.title {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.headtext {
+	border-radius: 8px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: #666699;
+}
+.headlinebg {
+	border-radius: 8px;
+	background-color: #000000;
+}
+.tdtop {
+	background-color: #C8C8DD;
+}
+.hicell {
+	background-color: #BABADD;
+}
+.hicell10 {
+	background-color: #BABADD;
+	font-size: 10px;
+}
+.rankc {
+	background-color: #CCCCCC;
+}
+.hirankc {
+	background-color: #AAAAAA;
+	font-weight: bold;
+}
+.rankc10 {
+	background-color: #CCCCCC;
+	font-size: 10px;
+}
+.rankc10center {
+	background-color: #CCCCCC;
+	font-size: 10px;
+	text-align: center;
+}
+.hirankc10center {
+	background-color: #AAAAAA;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+}
+.small {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 10px;
+}
+.asmall {
+	font-family: "Arial narrow", Arial, sans-serif;
+	font-size: 10px;
+	color: black;
+	text-align: center;
+}
+#footer {
+	width: 400px;
+	height: 32px;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NUQ4RDBBQTM0NUJGMTFFMUI3NDhCM0QxMjJGN0E4ODYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NUQ4RDBBQTQ0NUJGMTFFMUI3NDhCM0QxMjJGN0E4ODYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1RDhEMEFBMTQ1QkYxMUUxQjc0OEIzRDEyMkY3QTg4NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1RDhEMEFBMjQ1QkYxMUUxQjc0OEIzRDEyMkY3QTg4NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pjybjz0AAAD5UExURf///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+vUK5QAAABSdFJOUwADBgkMDxIVGBseISQnKi0wMzY5PD9CRUhLTldaXWNmaWxvcnV4e36BhIeKjZCTlpmcn6KlqKuusbS3ur3Aw8bJzM/S1djb3uHk5+rt8PP2+fysKi1CAAACG0lEQVQ4y21T3XqaUBBcU41ttEFQqklqBCGK1BoSS/yJaA4nIigizPs/TC9ERb/M5c7Onj27s0QniIbNPI/ZhkhfIG8E4Fa31epaHIGRv+SVcK1JLYu5LrNakr4OlXP5NOrIMxzx/qsTTTJFStyVRjiDLXH+48AXuCN5uIBXmfO0Rm7s1bYX9GaGUOTjfYK+rV3qnZIwx1KMFCKiYqS8HYglA4DZuvjx3ABsNcgTkbmqHZXKHMC/+7cmPkQA9VWH6CpUnbPyTNz1TfAbAO9qkKNGUs383wCqLv52EecBJOWkRuZCO4mtO3yKtqWXNh75AH4vDJoObMACEGvXAt0ifrEmj0KxdusAGA7G5LUZIOyG7PEhRJt8MOBhDvSeASzaLq2b/rArN/tOOQa6Qh+qq5kA3lUAy6ZPm6Yf1UnQ7zUHuOc3fn3IAMCX0wSvzV4r7R4b6wIiGYPidN9wXE6fmA5sL9mqQHK9NoeZeZTSJs2FAuBlB+htOT7xgQiguejRXVJJQ7OrZaZA/086qG+hmlopuc0sNZ4cRk3mSk6Dg97F1hurDhF9P67bF875NyXIExE9HQ3zk5+bbm8Yyk0OllPMDL+V+DiXmvbTqXoAwGpZvcMLR9svmTgCgHJ0tL3o8lL2cLa6PAcO/Ex+iqZn15dTw0CT1FfmuuxVlbR1qOYujrNgBGBWp9XqWAyBUfjqwKu9EfN9NupVM8H/S2rN5VNeTiwAAAAASUVORK5CYII=') no-repeat 0 50%;
+}
+</style>
+</head>
+<body>
+<div align="center">
+
+<h1 class="title" id="pagetitle1">#Nightaudit @ Snoonet stats by Vault108</h1>
+<p class="subtitle"><span id="pagetitle2">Statistics generated on  Wednesday 20 November 2019 - 20:28:06</span><br />
+<span id="pagetitle3">During this 659-day reporting period, a total of <b>1199</b> different nicks were represented on #Nightaudit.</span></p>
+   <br />
+   <table width="925" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Daily activity (last 31 days)</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0"><tr>
+<td align="center" valign="bottom" class="asmall">329<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="7" alt="7" title="7" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="12" alt="12" title="12" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="11" alt="11" title="11" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">258<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="8" alt="8" title="8" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="2" alt="2" title="2" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="13" alt="13" title="13" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">464<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="23" alt="23" title="23" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="8" alt="8" title="8" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="5" alt="5" title="5" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="6" alt="6" title="6" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">221<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="6" alt="6" title="6" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="2" alt="2" title="2" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="4" alt="4" title="4" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="7" alt="7" title="7" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">1047<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="9" alt="9" title="9" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="1" alt="1" title="1" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="13" alt="13" title="13" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="76" alt="76" title="76" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">241<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="7" alt="7" title="7" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="2" alt="2" title="2" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="12" alt="12" title="12" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">187<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="6" alt="6" title="6" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="6" alt="6" title="6" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="4" alt="4" title="4" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">484<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="1" alt="1" title="1" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="8" alt="8" title="8" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="28" alt="28" title="28" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="7" alt="7" title="7" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">599<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="4" alt="4" title="4" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="3" alt="3" title="3" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="16" alt="16" title="16" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="33" alt="33" title="33" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">626<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="16" alt="16" title="16" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="22" alt="22" title="22" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="19" alt="19" title="19" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">315<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="12" alt="12" title="12" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="11" alt="11" title="11" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="5" alt="5" title="5" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">349<br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="17" alt="17" title="17" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="15" alt="15" title="15" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">504<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="2" alt="2" title="2" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="18" alt="18" title="18" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="27" alt="27" title="27" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">1010<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="4" alt="4" title="4" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="1" alt="1" title="1" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="77" alt="77" title="77" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="13" alt="13" title="13" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">971<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="2" alt="2" title="2" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="7" alt="7" title="7" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="59" alt="59" title="59" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="22" alt="22" title="22" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">953<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="1" alt="1" title="1" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="10" alt="10" title="10" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="62" alt="62" title="62" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="15" alt="15" title="15" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">748<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="2" alt="2" title="2" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="17" alt="17" title="17" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="44" alt="44" title="44" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="7" alt="7" title="7" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">461<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="6" alt="6" title="6" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="5" alt="5" title="5" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="22" alt="22" title="22" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="9" alt="9" title="9" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">253<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="3" alt="3" title="3" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="2" alt="2" title="2" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="8" alt="8" title="8" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="9" alt="9" title="9" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">79<br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="2" alt="2" title="2" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="3" alt="3" title="3" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">832<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="4" alt="4" title="4" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="17" alt="17" title="17" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="44" alt="44" title="44" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="13" alt="13" title="13" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">301<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="2" alt="2" title="2" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="7" alt="7" title="7" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="18" alt="18" title="18" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">184<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="8" alt="8" title="8" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="6" alt="6" title="6" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="1" alt="1" title="1" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">684<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="20" alt="20" title="20" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="5" alt="5" title="5" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="18" alt="18" title="18" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="20" alt="20" title="20" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">923<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="17" alt="17" title="17" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="7" alt="7" title="7" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="28" alt="28" title="28" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="34" alt="34" title="34" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">853<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="16" alt="16" title="16" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="4" alt="4" title="4" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="8" alt="8" title="8" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="52" alt="52" title="52" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">541<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="23" alt="23" title="23" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="5" alt="5" title="5" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="4" alt="4" title="4" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="17" alt="17" title="17" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">685<br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="4" alt="4" title="4" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="46" alt="46" title="46" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="13" alt="13" title="13" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">520<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="4" alt="4" title="4" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="4" alt="4" title="4" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="31" alt="31" title="31" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="8" alt="8" title="8" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">191<br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="1" alt="1" title="1" /><br />
+<img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="3" alt="3" title="3" /><br />
+<img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="12" alt="12" title="12" /><br />
+</td>
+<td align="center" valign="bottom" class="asmall">55<br />
+<img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="2" alt="2" title="2" /><br />
+<img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="3" alt="3" title="3" /><br />
+</td>
+</tr><tr>
+<td class="rankc10center" align="center">30</td>
+<td class="rankc10center" align="center">29</td>
+<td class="rankc10center" align="center">28</td>
+<td class="rankc10center" align="center">27</td>
+<td class="rankc10center" align="center">26</td>
+<td class="rankc10center" align="center">25</td>
+<td class="rankc10center" align="center">24</td>
+<td class="rankc10center" align="center">23</td>
+<td class="rankc10center" align="center">22</td>
+<td class="rankc10center" align="center">21</td>
+<td class="rankc10center" align="center">20</td>
+<td class="rankc10center" align="center">19</td>
+<td class="rankc10center" align="center">18</td>
+<td class="rankc10center" align="center">17</td>
+<td class="rankc10center" align="center">16</td>
+<td class="rankc10center" align="center">15</td>
+<td class="rankc10center" align="center">14</td>
+<td class="rankc10center" align="center">13</td>
+<td class="rankc10center" align="center">12</td>
+<td class="rankc10center" align="center">11</td>
+<td class="rankc10center" align="center">10</td>
+<td class="rankc10center" align="center">9</td>
+<td class="rankc10center" align="center">8</td>
+<td class="rankc10center" align="center">7</td>
+<td class="rankc10center" align="center">6</td>
+<td class="rankc10center" align="center">5</td>
+<td class="rankc10center" align="center">4</td>
+<td class="rankc10center" align="center">3</td>
+<td class="rankc10center" align="center">2</td>
+<td class="rankc10center" align="center">1</td>
+<td class="rankc10center" align="center">0</td>
+</tr></table>
+<table align="center" border="0" width="520"><tr>
+<td align="center" class="asmall"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" width="40" height="15" align="middle" alt="0-5" /> = 0-5</td>
+<td align="center" class="asmall"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" width="40" height="15" align="middle" alt="6-11" /> = 6-11</td>
+<td align="center" class="asmall"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" width="40" height="15" align="middle" alt="12-17" /> = 12-17</td>
+<td align="center" class="asmall"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" width="40" height="15" align="middle" alt="18-23" /> = 18-23</td>
+</tr></table>
+   <br />
+   <table width="925" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most active times</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0"><tr>
+<td align="center" valign="bottom" class="asmall">9.3%<br /><img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="86" alt="68169" title="68169"/></td>
+<td align="center" valign="bottom" class="asmall">9.8%<br /><img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="91" alt="71639" title="71639"/></td>
+<td align="center" valign="bottom" class="asmall">8.8%<br /><img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="81" alt="64242" title="64242"/></td>
+<td align="center" valign="bottom" class="asmall">9.1%<br /><img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="84" alt="66554" title="66554"/></td>
+<td align="center" valign="bottom" class="asmall">8.7%<br /><img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="81" alt="64163" title="64163"/></td>
+<td align="center" valign="bottom" class="asmall">9.5%<br /><img id="blue-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="89" alt="69928" title="69928"/></td>
+<td align="center" valign="bottom" class="asmall">10.7%<br /><img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="100" alt="78356" title="78356"/></td>
+<td align="center" valign="bottom" class="asmall">7.9%<br /><img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="73" alt="57911" title="57911"/></td>
+<td align="center" valign="bottom" class="asmall">2.8%<br /><img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="26" alt="20809" title="20809"/></td>
+<td align="center" valign="bottom" class="asmall">2.1%<br /><img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="19" alt="15161" title="15161"/></td>
+<td align="center" valign="bottom" class="asmall">1.6%<br /><img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="15" alt="11961" title="11961"/></td>
+<td align="center" valign="bottom" class="asmall">1.4%<br /><img id="green-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="12" alt="10040" title="10040"/></td>
+<td align="center" valign="bottom" class="asmall">0.6%<br /><img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="5" alt="4310" title="4310"/></td>
+<td align="center" valign="bottom" class="asmall">0.4%<br /><img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="3" alt="2690" title="2690"/></td>
+<td align="center" valign="bottom" class="asmall">0.4%<br /><img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="3" alt="2852" title="2852"/></td>
+<td align="center" valign="bottom" class="asmall">0.3%<br /><img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="2" alt="2087" title="2087"/></td>
+<td align="center" valign="bottom" class="asmall">0.3%<br /><img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="3" alt="2558" title="2558"/></td>
+<td align="center" valign="bottom" class="asmall">1.0%<br /><img id="yellow-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="8" alt="6997" title="6997"/></td>
+<td align="center" valign="bottom" class="asmall">1.2%<br /><img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="11" alt="8870" title="8870"/></td>
+<td align="center" valign="bottom" class="asmall">1.5%<br /><img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="14" alt="11010" title="11010"/></td>
+<td align="center" valign="bottom" class="asmall">1.5%<br /><img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="13" alt="10695" title="10695"/></td>
+<td align="center" valign="bottom" class="asmall">2.3%<br /><img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="21" alt="16539" title="16539"/></td>
+<td align="center" valign="bottom" class="asmall">2.7%<br /><img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="24" alt="19553" title="19553"/></td>
+<td align="center" valign="bottom" class="asmall">6.2%<br /><img id="red-v" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" width="15" height="58" alt="45725" title="45725"/></td>
+</tr><tr>
+<td class="rankc10center" align="center">0</td>
+<td class="rankc10center" align="center">1</td>
+<td class="rankc10center" align="center">2</td>
+<td class="rankc10center" align="center">3</td>
+<td class="rankc10center" align="center">4</td>
+<td class="rankc10center" align="center">5</td>
+<td class="hirankc10center" align="center">6</td>
+<td class="rankc10center" align="center">7</td>
+<td class="rankc10center" align="center">8</td>
+<td class="rankc10center" align="center">9</td>
+<td class="rankc10center" align="center">10</td>
+<td class="rankc10center" align="center">11</td>
+<td class="rankc10center" align="center">12</td>
+<td class="rankc10center" align="center">13</td>
+<td class="rankc10center" align="center">14</td>
+<td class="rankc10center" align="center">15</td>
+<td class="rankc10center" align="center">16</td>
+<td class="rankc10center" align="center">17</td>
+<td class="rankc10center" align="center">18</td>
+<td class="rankc10center" align="center">19</td>
+<td class="rankc10center" align="center">20</td>
+<td class="rankc10center" align="center">21</td>
+<td class="rankc10center" align="center">22</td>
+<td class="rankc10center" align="center">23</td>
+</tr></table>
+<table align="center" border="0" width="520"><tr>
+<td align="center" class="asmall"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" width="40" height="15" align="middle" alt="0-5" /> = 0-5</td>
+<td align="center" class="asmall"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" width="40" height="15" align="middle" alt="6-11" /> = 6-11</td>
+<td align="center" class="asmall"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" width="40" height="15" align="middle" alt="12-17" /> = 12-17</td>
+<td align="center" class="asmall"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" width="40" height="15" align="middle" alt="18-23" /> = 18-23</td>
+</tr></table>
+   <br />
+   <table width="925" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most active nicks</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="929"><tr><td>&nbsp;</td><td class="tdtop"><b>Nick</b></td><td class="tdtop"><b>Number of lines</b></td><td class="tdtop"><b>When?</b></td><td class="tdtop"><b>Number of Words</b></td><td class="tdtop"><b>Words per line</b></td><td class="tdtop"><b>Chars per line</b></td><td class="tdtop"><b>Last seen</b></td><td class="tdtop"><b>Random quote</b></td>
+
+</tr>
+<tr><td class="hirankc" align="left">1</td>
+<td style="background-color: #babadc"><span>Crystal</span></td><td style="background-color: #babadc" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="65" height="15" align="middle" alt="34610" title="34610" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="32" height="15" align="middle" alt="17052" title="17052" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" align="middle" alt="557" title="557" />&nbsp;52591</td><td style="background-color: #babadc"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="26" height="15" alt="34610" title="34610" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="12" height="15" alt="17052" title="17052" /></td><td style="background-color: #babadc">370858</td><td style="background-color: #babadc">7.1</td><td style="background-color: #babadc">37.3</td><td style="background-color: #babadc">77 days ago</td><td style="background-color: #babadc">"also Wow. it is dead here.."</td>
+</tr>
+<tr><td class="rankc" align="left">2</td>
+<td style="background-color: #bbbbdb"><span>supensa</span></td><td style="background-color: #bbbbdb" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="55" height="15" align="middle" alt="28983" title="28983" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="26" height="15" align="middle" alt="14060" title="14060" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="12" height="15" align="middle" alt="6460" title="6460" />&nbsp;49891</td><td style="background-color: #bbbbdb"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="23" height="15" alt="28983" title="28983" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="11" height="15" alt="14060" title="14060" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="5" height="15" alt="6460" title="6460" /></td><td style="background-color: #bbbbdb">399616</td><td style="background-color: #bbbbdb">8.0</td><td style="background-color: #bbbbdb">41.9</td><td style="background-color: #bbbbdb">2 days ago</td><td style="background-color: #bbbbdb">"Garnet is a Crystal Gem from Steven Universe"</td>
+</tr>
+<tr><td class="rankc" align="left">3</td>
+<td style="background-color: #bcbcda"><span>Nattyfrank</span></td><td style="background-color: #bcbcda" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="39" height="15" align="middle" alt="20662" title="20662" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="5" height="15" align="middle" alt="3075" title="3075" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="6" height="15" align="middle" alt="3639" title="3639" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="32" height="15" align="middle" alt="16905" title="16905" />&nbsp;44281</td><td style="background-color: #bcbcda"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="18" height="15" alt="20662" title="20662" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="2" height="15" alt="3075" title="3075" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="3" height="15" alt="3639" title="3639" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="15" height="15" alt="16905" title="16905" /></td><td style="background-color: #bcbcda">270775</td><td style="background-color: #bcbcda">6.1</td><td style="background-color: #bcbcda">32.3</td><td style="background-color: #bcbcda">today</td><td style="background-color: #bcbcda">".tell Vault108 <a href="https://i.imgur.com/3OuML9p.jpg" target="_blank" title="Open in new window: https://i.imgur.com/3OuML9p.jpg">https://i.imgur.com/3OuML9p.jpg</a>"</td>
+</tr>
+<tr><td class="rankc" align="left">4</td>
+<td style="background-color: #bcbcda"><span>Bamcrab</span></td><td style="background-color: #bcbcda" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="53" height="15" align="middle" alt="27978" title="27978" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="15" height="15" align="middle" alt="8044" title="8044" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" align="middle" alt="541" title="541" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="11" height="15" align="middle" alt="6110" title="6110" />&nbsp;42673</td><td style="background-color: #bcbcda"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="26" height="15" alt="27978" title="27978" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="7" height="15" alt="8044" title="8044" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="5" height="15" alt="6110" title="6110" /></td><td style="background-color: #bcbcda">341228</td><td style="background-color: #bcbcda">8.0</td><td style="background-color: #bcbcda">42.6</td><td style="background-color: #bcbcda">today</td><td style="background-color: #bcbcda">"With my luck, inb4 fire alarm"</td>
+</tr>
+<tr><td class="rankc" align="left">5</td>
+<td style="background-color: #bdbdd9"><span>Vault108</span></td><td style="background-color: #bdbdd9" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="36" height="15" align="middle" alt="18982" title="18982" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="14" height="15" align="middle" alt="7608" title="7608" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="4" height="15" align="middle" alt="2397" title="2397" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="17" height="15" align="middle" alt="9290" title="9290" />&nbsp;38277</td><td style="background-color: #bdbdd9"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="19" height="15" alt="18982" title="18982" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="7" height="15" alt="7608" title="7608" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="2" height="15" alt="2397" title="2397" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="9" height="15" alt="9290" title="9290" /></td><td style="background-color: #bdbdd9">179716</td><td style="background-color: #bdbdd9">4.7</td><td style="background-color: #bdbdd9">26.0</td><td style="background-color: #bdbdd9">today</td><td style="background-color: #bdbdd9">"and putting my self first lordy"</td>
+</tr>
+<tr><td class="rankc" align="left">6</td>
+<td style="background-color: #bebed8"><span>_1317</span></td><td style="background-color: #bebed8" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="42" height="15" align="middle" alt="22171" title="22171" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="16" height="15" align="middle" alt="8610" title="8610" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="11" height="15" align="middle" alt="6027" title="6027" />&nbsp;36848</td><td style="background-color: #bebed8"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="24" height="15" alt="22171" title="22171" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="9" height="15" alt="8610" title="8610" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="6" height="15" alt="6027" title="6027" /></td><td style="background-color: #bebed8">311515</td><td style="background-color: #bebed8">8.5</td><td style="background-color: #bebed8">45.0</td><td style="background-color: #bebed8">298 days ago</td><td style="background-color: #bebed8">"is that ur fav genre of porno?"</td>
+</tr>
+<tr><td class="rankc" align="left">7</td>
+<td style="background-color: #bfbfd8"><span>melodyponddd</span></td><td style="background-color: #bfbfd8" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="26" height="15" align="middle" alt="13895" title="13895" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="19" height="15" align="middle" alt="10177" title="10177" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="4" height="15" align="middle" alt="2413" title="2413" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="19" height="15" align="middle" alt="10316" title="10316" />&nbsp;36801</td><td style="background-color: #bfbfd8"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="15" height="15" alt="13895" title="13895" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="11" height="15" alt="10177" title="10177" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="2" height="15" alt="2413" title="2413" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="11" height="15" alt="10316" title="10316" /></td><td style="background-color: #bfbfd8">314853</td><td style="background-color: #bfbfd8">8.6</td><td style="background-color: #bfbfd8">43.8</td><td style="background-color: #bfbfd8">today</td><td style="background-color: #bfbfd8">"Not much NE just watching Full House while I wake up a bit"</td>
+</tr>
+<tr><td class="rankc" align="left">8</td>
+<td style="background-color: #bfbfd7"><span>NightlyEnder</span></td><td style="background-color: #bfbfd7" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="34" height="15" align="middle" alt="18004" title="18004" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="31" height="15" align="middle" alt="16784" title="16784" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" align="middle" alt="546" title="546" />&nbsp;35375</td><td style="background-color: #bfbfd7"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="20" height="15" alt="18004" title="18004" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="18" height="15" alt="16784" title="16784" /></td><td style="background-color: #bfbfd7">281061</td><td style="background-color: #bfbfd7">7.9</td><td style="background-color: #bfbfd7">40.3</td><td style="background-color: #bfbfd7">yesterday</td><td style="background-color: #bfbfd7">"it was our thing to watch together"</td>
+</tr>
+<tr><td class="rankc" align="left">9</td>
+<td style="background-color: #c0c0d6"><span>Bachzag</span></td><td style="background-color: #c0c0d6" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="32" height="15" align="middle" alt="17305" title="17305" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="29" height="15" align="middle" alt="15413" title="15413" />&nbsp;33230</td><td style="background-color: #c0c0d6"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="20" height="15" alt="17305" title="17305" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="18" height="15" alt="15413" title="15413" /></td><td style="background-color: #c0c0d6">183829</td><td style="background-color: #c0c0d6">5.5</td><td style="background-color: #c0c0d6">27.1</td><td style="background-color: #c0c0d6">11 days ago</td><td style="background-color: #c0c0d6">"New job is super stressful ):"</td>
+</tr>
+<tr><td class="rankc" align="left">10</td>
+<td style="background-color: #c1c1d6"><span>NightwingAuditor</span></td><td style="background-color: #c1c1d6" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="39" height="15" align="middle" alt="20867" title="20867" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="18" height="15" align="middle" alt="9955" title="9955" />&nbsp;31612</td><td style="background-color: #c1c1d6"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="26" height="15" alt="20867" title="20867" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="12" height="15" alt="9955" title="9955" /></td><td style="background-color: #c1c1d6">400779</td><td style="background-color: #c1c1d6">12.7</td><td style="background-color: #c1c1d6">67.1</td><td style="background-color: #c1c1d6">yesterday</td><td style="background-color: #c1c1d6">"I'm just not particularly excited about it."</td>
+</tr>
+<tr><td class="rankc" align="left">11</td>
+<td style="background-color: #c1c1d5"><span>IlGnome</span></td><td style="background-color: #c1c1d5" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="35" height="15" align="middle" alt="18927" title="18927" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="14" height="15" align="middle" alt="7872" title="7872" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" align="middle" alt="625" title="625" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="1" height="15" align="middle" alt="633" title="633" />&nbsp;28057</td><td style="background-color: #c1c1d5"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="26" height="15" alt="18927" title="18927" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="11" height="15" alt="7872" title="7872" /></td><td style="background-color: #c1c1d5">234180</td><td style="background-color: #c1c1d5">8.3</td><td style="background-color: #c1c1d5">44.2</td><td style="background-color: #c1c1d5">15 days ago</td><td style="background-color: #c1c1d5">"Go to run audit. 5 pay service errors"</td>
+</tr>
+<tr><td class="rankc" align="left">12</td>
+<td style="background-color: #c2c2d4"><span>BoredAFHeather</span></td><td style="background-color: #c2c2d4" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="23" height="15" align="middle" alt="12580" title="12580" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="15" height="15" align="middle" alt="8354" title="8354" />&nbsp;21359</td><td style="background-color: #c2c2d4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="23" height="15" alt="12580" title="12580" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="15" height="15" alt="8354" title="8354" /></td><td style="background-color: #c2c2d4">259485</td><td style="background-color: #c2c2d4">12.1</td><td style="background-color: #c2c2d4">62.3</td><td style="background-color: #c2c2d4">3 days ago</td><td style="background-color: #c2c2d4">"At least as far as I've encountered"</td>
+</tr>
+<tr><td class="rankc" align="left">13</td>
+<td style="background-color: #c3c3d4"><span>SuplexPanda</span></td><td style="background-color: #c3c3d4" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="23" height="15" align="middle" alt="12137" title="12137" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="9" height="15" align="middle" alt="4987" title="4987" />&nbsp;17406</td><td style="background-color: #c3c3d4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="27" height="15" alt="12137" title="12137" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="11" height="15" alt="4987" title="4987" /></td><td style="background-color: #c3c3d4">139357</td><td style="background-color: #c3c3d4">8.0</td><td style="background-color: #c3c3d4">43.0</td><td style="background-color: #c3c3d4">444 days ago</td><td style="background-color: #c3c3d4">"Kicking me for no reason is not mod-like."</td>
+</tr>
+<tr><td class="rankc" align="left">14</td>
+<td style="background-color: #c4c4d3"><span>Ewli</span></td><td style="background-color: #c4c4d3" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="5" height="15" align="middle" alt="3123" title="3123" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="4" height="15" align="middle" alt="2165" title="2165" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="20" height="15" align="middle" alt="10776" title="10776" />&nbsp;16064</td><td style="background-color: #c4c4d3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="7" height="15" alt="3123" title="3123" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="5" height="15" alt="2165" title="2165" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="26" height="15" alt="10776" title="10776" /></td><td style="background-color: #c4c4d3">87624</td><td style="background-color: #c4c4d3">5.5</td><td style="background-color: #c4c4d3">27.9</td><td style="background-color: #c4c4d3">476 days ago</td><td style="background-color: #c4c4d3">"maybe she had it legally changed"</td>
+</tr>
+<tr><td class="rankc" align="left">15</td>
+<td style="background-color: #c4c4d2"><span>Almalito</span></td><td style="background-color: #c4c4d2" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="16" height="15" align="middle" alt="8732" title="8732" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="5" height="15" align="middle" alt="3063" title="3063" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="4" height="15" align="middle" alt="2173" title="2173" />&nbsp;14224</td><td style="background-color: #c4c4d2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="24" height="15" alt="8732" title="8732" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="8" height="15" alt="3063" title="3063" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="6" height="15" alt="2173" title="2173" /></td><td style="background-color: #c4c4d2">175723</td><td style="background-color: #c4c4d2">12.4</td><td style="background-color: #c4c4d2">67.5</td><td style="background-color: #c4c4d2">198 days ago</td><td style="background-color: #c4c4d2">"That's half a shift Gnome."</td>
+</tr>
+<tr><td class="rankc" align="left">16</td>
+<td style="background-color: #c5c5d2"><span>Frohtastic</span></td><td style="background-color: #c5c5d2" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="10" height="15" align="middle" alt="5385" title="5385" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="1" height="15" align="middle" alt="947" title="947" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" align="middle" alt="537" title="537" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="7" height="15" align="middle" alt="3984" title="3984" />&nbsp;10853</td><td style="background-color: #c5c5d2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="19" height="15" alt="5385" title="5385" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="3" height="15" alt="947" title="947" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" alt="537" title="537" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="14" height="15" alt="3984" title="3984" /></td><td style="background-color: #c5c5d2">64379</td><td style="background-color: #c5c5d2">5.9</td><td style="background-color: #c5c5d2">33.6</td><td style="background-color: #c5c5d2">223 days ago</td><td style="background-color: #c5c5d2">"Bamcrab:  smaller meals more often"</td>
+</tr>
+<tr><td class="rankc" align="left">17</td>
+<td style="background-color: #c6c6d1"><span>Shappie</span></td><td style="background-color: #c6c6d1" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="11" height="15" align="middle" alt="6036" title="6036" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="7" height="15" align="middle" alt="3764" title="3764" />&nbsp;10035</td><td style="background-color: #c6c6d1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="24" height="15" alt="6036" title="6036" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="15" height="15" alt="3764" title="3764" /></td><td style="background-color: #c6c6d1">75614</td><td style="background-color: #c6c6d1">7.5</td><td style="background-color: #c6c6d1">39.1</td><td style="background-color: #c6c6d1">161 days ago</td><td style="background-color: #c6c6d1">"AGM threw it into the trash can"</td>
+</tr>
+<tr><td class="rankc" align="left">18</td>
+<td style="background-color: #c6c6d0"><span>GingerMagician</span></td><td style="background-color: #c6c6d0" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="13" height="15" align="middle" alt="7244" title="7244" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="2" height="15" align="middle" alt="1169" title="1169" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="2" height="15" align="middle" alt="1557" title="1557" />&nbsp;10024</td><td style="background-color: #c6c6d0"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="28" height="15" alt="7244" title="7244" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="4" height="15" alt="1169" title="1169" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="6" height="15" alt="1557" title="1557" /></td><td style="background-color: #c6c6d0">97200</td><td style="background-color: #c6c6d0">9.7</td><td style="background-color: #c6c6d0">48.8</td><td style="background-color: #c6c6d0">124 days ago</td><td style="background-color: #c6c6d0">"sorry lady, graduation is sold out almost a year in advance"</td>
+</tr>
+<tr><td class="rankc" align="left">19</td>
+<td style="background-color: #c7c7d0"><span>Neej</span></td><td style="background-color: #c7c7d0" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="3" height="15" align="middle" alt="1989" title="1989" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" align="middle" alt="1029" title="1029" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="10" height="15" align="middle" alt="5293" title="5293" />&nbsp;8312</td><td style="background-color: #c7c7d0"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="9" height="15" alt="1989" title="1989" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="4" height="15" alt="1029" title="1029" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="25" height="15" alt="5293" title="5293" /></td><td style="background-color: #c7c7d0">46645</td><td style="background-color: #c7c7d0">5.6</td><td style="background-color: #c7c7d0">28.3</td><td style="background-color: #c7c7d0">479 days ago</td><td style="background-color: #c7c7d0">"and i also see our camera feed monitor from back here"</td>
+</tr>
+<tr><td class="rankc" align="left">20</td>
+<td style="background-color: #c8c8cf"><span>Snowkit10</span></td><td style="background-color: #c8c8cf" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="9" height="15" align="middle" alt="5210" title="5210" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="5" height="15" align="middle" alt="2731" title="2731" />&nbsp;8255</td><td style="background-color: #c8c8cf"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="25" height="15" alt="5210" title="5210" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="13" height="15" alt="2731" title="2731" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" alt="243" title="243" /></td><td style="background-color: #c8c8cf">84825</td><td style="background-color: #c8c8cf">10.3</td><td style="background-color: #c8c8cf">52.3</td><td style="background-color: #c8c8cf">52 days ago</td><td style="background-color: #c8c8cf">"I'll miss the traveling benefits"</td>
+</tr>
+<tr><td class="rankc" align="left">21</td>
+<td style="background-color: #c9c9ce"><span>BobVosh</span></td><td style="background-color: #c9c9ce" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="11" height="15" align="middle" alt="5915" title="5915" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="1" height="15" align="middle" alt="936" title="936" />&nbsp;6851</td><td style="background-color: #c9c9ce"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="34" height="15" alt="5915" title="5915" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="5" height="15" alt="936" title="936" /></td><td style="background-color: #c9c9ce">46389</td><td style="background-color: #c9c9ce">6.8</td><td style="background-color: #c9c9ce">35.1</td><td style="background-color: #c9c9ce">98 days ago</td><td style="background-color: #c9c9ce">"apparently they did it in tribute"</td>
+</tr>
+<tr><td class="rankc" align="left">22</td>
+<td style="background-color: #c9c9ce"><span>_1317_</span></td><td style="background-color: #c9c9ce" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="5" height="15" align="middle" alt="2812" title="2812" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="4" height="15" align="middle" alt="2557" title="2557" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" align="middle" alt="583" title="583" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="1" height="15" align="middle" alt="582" title="582" />&nbsp;6534</td><td style="background-color: #c9c9ce"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="17" height="15" alt="2812" title="2812" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="15" height="15" alt="2557" title="2557" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="3" height="15" alt="583" title="583" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="3" height="15" alt="582" title="582" /></td><td style="background-color: #c9c9ce">53235</td><td style="background-color: #c9c9ce">8.1</td><td style="background-color: #c9c9ce">42.2</td><td style="background-color: #c9c9ce">304 days ago</td><td style="background-color: #c9c9ce">"<a href="https://i.redd.it/2bn4z61i6sa21.jpg" target="_blank" title="Open in new window: https://i.redd.it/2bn4z61i6sa21.jpg">https://i.redd.it/2bn4z61i6sa21.jpg</a>"</td>
+</tr>
+<tr><td class="rankc" align="left">23</td>
+<td style="background-color: #cacacd"><span>Falenstarr</span></td><td style="background-color: #cacacd" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="4" height="15" align="middle" alt="2357" title="2357" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="5" height="15" align="middle" alt="3096" title="3096" />&nbsp;6302</td><td style="background-color: #cacacd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="14" height="15" alt="2357" title="2357" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="19" height="15" alt="3096" title="3096" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="2" height="15" alt="422" title="422" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="2" height="15" alt="427" title="427" /></td><td style="background-color: #cacacd">60999</td><td style="background-color: #cacacd">9.7</td><td style="background-color: #cacacd">49.1</td><td style="background-color: #cacacd">172 days ago</td><td style="background-color: #cacacd">"I really don’t want to raise my insurance cost"</td>
+</tr>
+<tr><td class="rankc" align="left">24</td>
+<td style="background-color: #cbcbcc"><span>BANANA666</span></td><td style="background-color: #cbcbcc" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="2" height="15" align="middle" alt="1057" title="1057" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="8" height="15" align="middle" alt="4239" title="4239" />&nbsp;6141</td><td style="background-color: #cbcbcc"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="6" height="15" alt="1057" title="1057" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="2" height="15" alt="459" title="459" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="2" height="15" alt="386" title="386" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="27" height="15" alt="4239" title="4239" /></td><td style="background-color: #cbcbcc">33482</td><td style="background-color: #cbcbcc">5.5</td><td style="background-color: #cbcbcc">27.6</td><td style="background-color: #cbcbcc">161 days ago</td><td style="background-color: #cbcbcc">"I have my graduation tonight haha"</td>
+</tr>
+<tr><td class="rankc" align="left">25</td>
+<td style="background-color: #cccccc"><span>VDazzler</span></td><td style="background-color: #cccccc" nowrap="nowrap"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="2" height="15" align="middle" alt="1318" title="1318" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="7" height="15" align="middle" alt="3930" title="3930" />&nbsp;6004</td><td style="background-color: #cccccc"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="8" height="15" alt="1318" title="1318" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="1" height="15" alt="251" title="251" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="3" height="15" alt="505" title="505" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="26" height="15" alt="3930" title="3930" /></td><td style="background-color: #cccccc">35555</td><td style="background-color: #cccccc">5.9</td><td style="background-color: #cccccc">29.4</td><td style="background-color: #cccccc">192 days ago</td><td style="background-color: #cccccc">"hes asleep, spooning the toilet bc he thought it was me"</td>
+</tr>
+</table><br />
+<br /><b><i>These didn't make it to the top:</i></b><table><tr>
+<td class="rankc10"><span>Crazy_Phil (6003)</span></td>
+<td class="rankc10"><span>FOMLawfulEvil (5826)</span></td>
+<td class="rankc10"><span>Backfromjersey (5539)</span></td>
+<td class="rankc10"><span>Krampus (5123)</span></td>
+<td class="rankc10"><span>Sigridirsson (4968)</span></td>
+</tr><tr>
+<td class="rankc10"><span>_Belsnickel (4905)</span></td>
+<td class="rankc10"><span>SellYourselfShort (4825)</span></td>
+<td class="rankc10"><span>Nick_the_watcher (4800)</span></td>
+<td class="rankc10"><span>Bachy (4341)</span></td>
+<td class="rankc10"><span>weirdhotelguy (4274)</span></td>
+</tr><tr>
+<td class="rankc10"><span>Bachbork (3823)</span></td>
+<td class="rankc10"><span>Montu-sama (3610)</span></td>
+<td class="rankc10"><span>Thraxina (3349)</span></td>
+<td class="rankc10"><span>people_watcher (3012)</span></td>
+<td class="rankc10"><span>Ohmslyce (2850)</span></td>
+</tr><tr>
+<td class="rankc10"><span>Gnomethulu (2783)</span></td>
+<td class="rankc10"><span>BachzagM24GUSA (2608)</span></td>
+<td class="rankc10"><span>Plainclothes (2588)</span></td>
+<td class="rankc10"><span>Bachsnoo (2578)</span></td>
+<td class="rankc10"><span>HANS_TRAPP (2204)</span></td>
+</tr><tr>
+<td class="rankc10"><span>Bachdog (2187)</span></td>
+<td class="rankc10"><span>P_Tiddy (2156)</span></td>
+<td class="rankc10"><span>Borkzag (2003)</span></td>
+<td class="rankc10"><span>HANNS_TRAPP (1792)</span></td>
+<td class="rankc10"><span>SuplexedPandas (1775)</span></td>
+</tr><tr>
+<td class="rankc10"><span>PapiChuro (1725)</span></td>
+<td class="rankc10"><span>Ghunr (1648)</span></td>
+<td class="rankc10"><span>thepogomaster (1562)</span></td>
+<td class="rankc10"><span>SpoonThief (1487)</span></td>
+<td class="rankc10"><span>StandardIssueCaveman (1392)</span></td>
+</tr></table>
+<br /><b>By the way, there were 1144 other nicks.</b><br />
+   <br />
+   <table width="925" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most active nicks by hours</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="929"><tr>
+<td>&nbsp;</td>
+<td class="tdtop"><b>0-5</b></td>
+<td class="tdtop"><b>6-11</b></td>
+<td class="tdtop"><b>12-17</b></td>
+<td class="tdtop"><b>18-23</b></td>
+</tr>
+<tr><td class="hirankc">1</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="100" height="15" align="middle" alt="" />
+Crystal - 34610
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="49" height="15" align="middle" alt="" />
+Crystal - 17052
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="10" height="15" align="middle" alt="" />
+Nattyfrank - 3639
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="48" height="15" align="middle" alt="" />
+Nattyfrank - 16905
+</td>
+</tr>
+<tr><td class="rankc">2</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="83" height="15" align="middle" alt="" />
+supensa - 28983
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="48" height="15" align="middle" alt="" />
+NightlyEnder - 16784
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="6" height="15" align="middle" alt="" />
+melodyponddd - 2413
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="31" height="15" align="middle" alt="" />
+Ewli - 10776
+</td>
+</tr>
+<tr><td class="rankc">3</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="80" height="15" align="middle" alt="" />
+Bamcrab - 27978
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="44" height="15" align="middle" alt="" />
+Bachzag - 15413
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="6" height="15" align="middle" alt="" />
+Vault108 - 2397
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="29" height="15" align="middle" alt="" />
+melodyponddd - 10316
+</td>
+</tr>
+<tr><td class="rankc">4</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="64" height="15" align="middle" alt="" />
+_1317 - 22171
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="40" height="15" align="middle" alt="" />
+supensa - 14060
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="6" height="15" align="middle" alt="" />
+Ewli - 2165
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="26" height="15" align="middle" alt="" />
+Vault108 - 9290
+</td>
+</tr>
+<tr><td class="rankc">5</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="60" height="15" align="middle" alt="" />
+NightwingAuditor - 20867
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="29" height="15" align="middle" alt="" />
+melodyponddd - 10177
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="2" height="15" align="middle" alt="" />
+Neej - 1029
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="18" height="15" align="middle" alt="" />
+supensa - 6460
+</td>
+</tr>
+<tr><td class="rankc">6</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="59" height="15" align="middle" alt="" />
+Nattyfrank - 20662
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="28" height="15" align="middle" alt="" />
+NightwingAuditor - 9955
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" align="middle" alt="" />
+IlGnome - 625
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="17" height="15" align="middle" alt="" />
+Bamcrab - 6110
+</td>
+</tr>
+<tr><td class="rankc">7</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="54" height="15" align="middle" alt="" />
+Vault108 - 18982
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="24" height="15" align="middle" alt="" />
+_1317 - 8610
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" align="middle" alt="" />
+_1317_ - 583
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="17" height="15" align="middle" alt="" />
+_1317 - 6027
+</td>
+</tr>
+<tr><td class="rankc">8</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="54" height="15" align="middle" alt="" />
+IlGnome - 18927
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="24" height="15" align="middle" alt="" />
+BoredAFHeather - 8354
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" align="middle" alt="" />
+Crystal - 557
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="15" height="15" align="middle" alt="" />
+Neej - 5293
+</td>
+</tr>
+<tr><td class="rankc">9</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="52" height="15" align="middle" alt="" />
+NightlyEnder - 18004
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="23" height="15" align="middle" alt="" />
+Bamcrab - 8044
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" align="middle" alt="" />
+NightlyEnder - 546
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="12" height="15" align="middle" alt="" />
+BANANA666 - 4239
+</td>
+</tr>
+<tr><td class="rankc">10</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="blue-h" border="0" width="50" height="15" align="middle" alt="" />
+Bachzag - 17305
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="green-h" border="0" width="22" height="15" align="middle" alt="" />
+IlGnome - 7872
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="yellow-h" border="0" width="1" height="15" align="middle" alt="" />
+Bamcrab - 541
+</td>
+<td class="hicell">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=
+" id="red-h" border="0" width="11" height="15" align="middle" alt="" />
+Frohtastic - 3984
+</td>
+</tr>
+</table>
+   <br />
+   <table width="925" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Big numbers</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table width="929">
+<tr><td class="hicell">Is <b>ducksgeese</b> stupid or just asking too many questions?  23.6% lines contained a question!
+<br /><span class="small"><b>Gbdman</b> didn't know that much either.  23.3% of his/her lines were questions.</span>
+</td></tr>
+<tr><td class="hicell">The loudest one was <b>sapandsawdust</b>, who yelled 18.3% of the time!
+<br /><span class="small">Another <i>old yeller</i> was <b>PacMan</b>, who shouted 11.3% of the time!</span>
+</td></tr>
+<tr><td class="hicell">It seems that <b>Barkzag</b>'s shift-key is hanging:  23.0% of the time he/she wrote UPPERCASE.<br /><span class="small"><b>For example, like this:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Barkzag&gt; TOMATO &gt;:C</span>
+<br /><span class="small"><b>Bachcat</b> just forgot to deactivate his/her Caps-Lock.  He/She wrote UPPERCASE 21.8% of the time.</span>
+</td></tr>
+<tr><td class="hicell"><b>Crystal</b> is a very aggressive person.  He/She attacked others <b>8</b> times.<br /><span class="small"><b>For example, like this:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Crystal smacks Barkzag_ with a newspaper</span>
+<br /><span class="small"><b>Bachzag</b> can't control his/her aggressions, either.  He/She picked on others <b>7</b> times.</span>
+</td></tr>
+<tr><td class="hicell">Poor <b>supensa</b>, nobody likes him/her.  He/She was attacked <b>7</b> times.<br /><span class="small"><b>For example, like this:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* IlGnome stabs supensa in the dick hole</span>
+<br /><span class="small"><b>Crystal</b> seems to be unliked too.  He/She got beaten <b>4</b> times.</span>
+</td></tr>
+<tr><td class="hicell"><b>Borkzag</b> brings happiness to the world.  8.3% lines contained smiling faces.  :)
+<br /><span class="small"><b>alldaynk0</b> isn't a sad person either, smiling 8.3% of the time.</span>
+</td></tr>
+<tr><td class="hicell"><b>Barkzag</b> seems to be sad at the moment:  5.1% lines contained sad faces.  :(
+<br /><span class="small"><b>Bachdog</b> is also a sad person, crying 4.8% of the time.</span>
+</td></tr>
+<tr><td class="hicell"><b>Trzeciak</b> wrote the longest lines, averaging 86.5 letters per line.<br />
+<span class="small">#Nightaudit average was 40.9 letters per line.</span></td></tr>
+<tr><td class="hicell"><b>AVaultInOurStars</b> wrote the shortest lines, averaging 21.2 characters per line.<br />
+<span class="small"><b>HANS_TRAPP</b> was tight-lipped, too, averaging 22.1 characters.</span></td></tr>
+<tr><td class="hicell"><b>NightwingAuditor</b> spoke a total of 400779 words!
+<br /><span class="small">NightwingAuditor's faithful follower, <b>supensa</b>, didn't speak so much: 399616 words.</span>
+</td></tr>
+<tr><td class="hicell"><b>Guest42051</b> wrote an average of 30.00 words per line.
+<br /><span class="small">Channel average was 7.75 words per line.</span>
+</td></tr>
+</table>
+   <br />
+   <table width="925" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most used words</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="929"><tr>
+<td>&nbsp;</td><td class="tdtop"><b>Word</b></td>
+<td class="tdtop"><b>Number of Uses</b></td>
+<td class="tdtop"><b>Last Used by</b></td></tr>
+<tr><td class="hirankc">1</td>
+<td class="hicell">about</td>
+<td class="hicell">17138</td>
+<td class="hicell">melodyponddd</td>
+</tr>
+<tr><td class="rankc">2</td>
+<td class="hicell">because</td>
+<td class="hicell">14372</td>
+<td class="hicell">melodyponddd</td>
+</tr>
+<tr><td class="rankc">3</td>
+<td class="hicell">people</td>
+<td class="hicell">12948</td>
+<td class="hicell">Bamcrab</td>
+</tr>
+<tr><td class="rankc">4</td>
+<td class="hicell">THINK</td>
+<td class="hicell">11407</td>
+<td class="hicell">melodyponddd</td>
+</tr>
+<tr><td class="rankc">5</td>
+<td class="hicell">there</td>
+<td class="hicell">11380</td>
+<td class="hicell">NightlyEnder</td>
+</tr>
+<tr><td class="rankc">6</td>
+<td class="hicell">would</td>
+<td class="hicell">10993</td>
+<td class="hicell">melodyponddd</td>
+</tr>
+<tr><td class="rankc">7</td>
+<td class="hicell">really</td>
+<td class="hicell">9404</td>
+<td class="hicell">melodyponddd</td>
+</tr>
+<tr><td class="rankc">8</td>
+<td class="hicell">fucking</td>
+<td class="hicell">9204</td>
+<td class="hicell">Nattyfrank</td>
+</tr>
+<tr><td class="rankc">9</td>
+<td class="hicell">going</td>
+<td class="hicell">8765</td>
+<td class="hicell">melodyponddd</td>
+</tr>
+<tr><td class="rankc">10</td>
+<td class="hicell">still</td>
+<td class="hicell">8477</td>
+<td class="hicell">Vault108</td>
+</tr>
+</table>
+   <br />
+   <table width="925" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most referenced nicks</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="929"><tr>
+<td>&nbsp;</td><td class="tdtop"><b>Nick</b></td>
+<td class="tdtop"><b>Number of Uses</b></td>
+<td class="tdtop"><b>Last Used by</b></td></tr>
+<tr><td class="hirankc">1</td>
+<td class="hicell">been</td>
+<td class="hicell">8357</td>
+<td class="hicell">omgwtfscreenname</td>
+</tr>
+<tr><td class="rankc">2</td>
+<td class="hicell">Crystal</td>
+<td class="hicell">4794</td>
+<td class="hicell">supensa</td>
+</tr>
+<tr><td class="rankc">3</td>
+<td class="hicell">Things</td>
+<td class="hicell">4244</td>
+<td class="hicell">Nattyfrank</td>
+</tr>
+<tr><td class="rankc">4</td>
+<td class="hicell">supensa</td>
+<td class="hicell">3768</td>
+<td class="hicell">Nattyfrank</td>
+</tr>
+<tr><td class="rankc">5</td>
+<td class="hicell">melodyponddd</td>
+<td class="hicell">3300</td>
+<td class="hicell">Vault108</td>
+</tr>
+</table>
+   <br />
+   <table width="925" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Smileys :-)</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="929"><tr>
+<td>&nbsp;</td><td class="tdtop"><b>Smiley</b></td>
+<td class="tdtop"><b>Number of Uses</b></td>
+<td class="tdtop"><b>Last Used by</b></td></tr>
+<tr><td class="hirankc">1</td>
+<td class="hicell">:(</td>
+<td class="hicell">4795</td>
+<td class="hicell">melodyponddd</td>
+</tr>
+<tr><td class="rankc">2</td>
+<td class="hicell">:D</td>
+<td class="hicell">4227</td>
+<td class="hicell">Vault108</td>
+</tr>
+<tr><td class="rankc">3</td>
+<td class="hicell">:P</td>
+<td class="hicell">2358</td>
+<td class="hicell">supensa</td>
+</tr>
+<tr><td class="rankc">4</td>
+<td class="hicell">:)</td>
+<td class="hicell">1814</td>
+<td class="hicell">Vault108</td>
+</tr>
+<tr><td class="rankc">5</td>
+<td class="hicell">D:</td>
+<td class="hicell">1366</td>
+<td class="hicell">melodyponddd</td>
+</tr>
+<tr><td class="rankc">6</td>
+<td class="hicell">\o/</td>
+<td class="hicell">1176</td>
+<td class="hicell">Nattyfrank</td>
+</tr>
+<tr><td class="rankc">7</td>
+<td class="hicell">:/</td>
+<td class="hicell">680</td>
+<td class="hicell">Nattyfrank</td>
+</tr>
+<tr><td class="rankc">8</td>
+<td class="hicell">;)</td>
+<td class="hicell">488</td>
+<td class="hicell">Bamcrab</td>
+</tr>
+<tr><td class="rankc">9</td>
+<td class="hicell">-_-</td>
+<td class="hicell">441</td>
+<td class="hicell">melodyponddd</td>
+</tr>
+<tr><td class="rankc">10</td>
+<td class="hicell">-.-</td>
+<td class="hicell">169</td>
+<td class="hicell">melodyponddd</td>
+</tr>
+</table>
+   <br />
+   <table width="925" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">#Nightaudit karma</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="929"><tr>
+<td>&nbsp;</td><td class="tdtop"><b>Nick</b></td>
+<td class="tdtop"><b>Karma</b></td>
+<td class="tdtop"><b>Good karma by</b></td>
+<td class="tdtop"><b>Bad karma by</b></td></tr>
+<tr><td class="hirankc">1</td>
+<td class="hicell">butts</td>
+<td class="hicell">19</td>
+<td class="hicell">cfSteak, BobVosh, Snowkit10, supensa, melodyponddd, P_Tiddy, Protheus, Vault108, Bamcrab, GingerMagician, ...</td>
+<td class="hicell">NightwingAuditor</td>
+</tr>
+<tr><td class="rankc">2</td>
+<td class="hicell">Crystal</td>
+<td class="hicell">7</td>
+<td class="hicell">Vault108, GingerMagician, Bamcrab, Snowkit10, supensa, Gnomethulu, P_Tiddy, BoredAFHeather, Krampus, Falenstarr, ...</td>
+<td class="hicell">_1317, _Belsnickel_, _onethreeoneseven, _Belsnickel</td>
+</tr>
+<tr><td class="rankc">3</td>
+<td class="hicell">melodyponddd</td>
+<td class="hicell">7</td>
+<td class="hicell">IlGnome, _Belsnickel, Krampus, Bamcrab, supensa, Crystal, Vault108</td>
+<td class="hicell"></td>
+</tr>
+<tr><td class="rankc">4</td>
+<td class="hicell">wrol</td>
+<td class="hicell">6</td>
+<td class="hicell">melodyponddd, Crystal, _Belsnickel, Bamcrab, GingerMagician, Vault108, NightlyEnder</td>
+<td class="hicell">BoredAFHeather</td>
+</tr>
+<tr><td class="rankc">5</td>
+<td class="hicell">Bamcrab</td>
+<td class="hicell">5</td>
+<td class="hicell">Vault108, NightwingAuditor, BoredAFHeather, IlGnome, melodyponddd, Crystal</td>
+<td class="hicell">_1317</td>
+</tr>
+<tr><td class="rankc">6</td>
+<td class="hicell">BoredAFHeather</td>
+<td class="hicell">5</td>
+<td class="hicell">supensa, Crystal, Snowkit10, Bamcrab, IlGnome, Nattyfrank</td>
+<td class="hicell">Bachzag</td>
+</tr>
+<tr><td class="rankc">7</td>
+<td class="hicell">boobs</td>
+<td class="hicell">5</td>
+<td class="hicell">Nattyfrank, BoredAFHeather, NightwingAuditor, Vault108, Gbdman, Crystal</td>
+<td class="hicell">Bachzag</td>
+</tr>
+<tr><td class="rankc">8</td>
+<td class="hicell">NightwingAuditor</td>
+<td class="hicell">3</td>
+<td class="hicell">IlGnome, supensa, Bamcrab</td>
+<td class="hicell"></td>
+</tr>
+<tr><td class="rankc">9</td>
+<td class="hicell">dick</td>
+<td class="hicell">2</td>
+<td class="hicell">Vault108, BobVosh, linuxdaemon</td>
+<td class="hicell">Crystal</td>
+</tr>
+<tr><td class="rankc">10</td>
+<td class="hicell">IlGnome</td>
+<td class="hicell">2</td>
+<td class="hicell">Bamcrab, BoredAFHeather, Vault108, _1317</td>
+<td class="hicell">GingerMagician, _Belsnickel</td>
+</tr>
+<tr><td class="rankc">11</td>
+<td class="hicell">auri</td>
+<td class="hicell">2</td>
+<td class="hicell">Gnomethulu, Falenstarr</td>
+<td class="hicell"></td>
+</tr>
+<tr><td class="rankc">12</td>
+<td class="hicell">Shappie</td>
+<td class="hicell">2</td>
+<td class="hicell">melodyponddd, Crystal</td>
+<td class="hicell"></td>
+</tr>
+<tr><td class="rankc">13</td>
+<td class="hicell">Nattyfrank</td>
+<td class="hicell">2</td>
+<td class="hicell">Bamcrab, supensa, BoredAFHeather</td>
+<td class="hicell">Vault108</td>
+</tr>
+<tr><td class="rankc">14</td>
+<td class="hicell">hamburger</td>
+<td class="hicell">2</td>
+<td class="hicell">Crystal, weirdhotelguy</td>
+<td class="hicell"></td>
+</tr>
+<tr><td class="rankc">15</td>
+<td class="hicell">void</td>
+<td class="hicell">2</td>
+<td class="hicell">Bamcrab, HungoverCrab</td>
+<td class="hicell"></td>
+</tr>
+<tr><td class="rankc"></td>
+<td class="hicell" colspan="4"></td>
+</tr>
+<tr><td class="rankc">15</td>
+<td class="hicell">ceystal</td>
+<td class="hicell">-1</td>
+<td class="hicell"></td>
+<td class="hicell">_Belsnickel_</td>
+</tr>
+<tr><td class="rankc">14</td>
+<td class="hicell">santa</td>
+<td class="hicell">-1</td>
+<td class="hicell"></td>
+<td class="hicell">Bamcrab</td>
+</tr>
+<tr><td class="rankc">13</td>
+<td class="hicell">yerl</td>
+<td class="hicell">-1</td>
+<td class="hicell"></td>
+<td class="hicell">Vault108</td>
+</tr>
+<tr><td class="rankc">12</td>
+<td class="hicell">weirdhotelguy</td>
+<td class="hicell">-1</td>
+<td class="hicell"></td>
+<td class="hicell">xzillerationer</td>
+</tr>
+<tr><td class="rankc">11</td>
+<td class="hicell">Krampus</td>
+<td class="hicell">-1</td>
+<td class="hicell"></td>
+<td class="hicell">_Belsnickel</td>
+</tr>
+<tr><td class="rankc">10</td>
+<td class="hicell">love</td>
+<td class="hicell">-1</td>
+<td class="hicell"></td>
+<td class="hicell">melodyponddd</td>
+</tr>
+<tr><td class="rankc">9</td>
+<td class="hicell">eggnog</td>
+<td class="hicell">-2</td>
+<td class="hicell"></td>
+<td class="hicell">BoredAFHeather, Bamcrab</td>
+</tr>
+<tr><td class="rankc">8</td>
+<td class="hicell">finicky</td>
+<td class="hicell">-2</td>
+<td class="hicell"></td>
+<td class="hicell">Bamcrab, IlGnome</td>
+</tr>
+<tr><td class="rankc">7</td>
+<td class="hicell">_Belsnickel</td>
+<td class="hicell">-2</td>
+<td class="hicell"></td>
+<td class="hicell">IlGnome, Crystal</td>
+</tr>
+<tr><td class="rankc">6</td>
+<td class="hicell">GingerMagician</td>
+<td class="hicell">-2</td>
+<td class="hicell"></td>
+<td class="hicell">IlGnome, Snowkit10</td>
+</tr>
+<tr><td class="rankc">5</td>
+<td class="hicell">ChubbyMuffin</td>
+<td class="hicell">-2</td>
+<td class="hicell"></td>
+<td class="hicell">IlGnome, Bamcrab</td>
+</tr>
+<tr><td class="rankc">4</td>
+<td class="hicell">runas</td>
+<td class="hicell">-2</td>
+<td class="hicell"></td>
+<td class="hicell">Crystal, Bamcrab</td>
+</tr>
+<tr><td class="rankc">3</td>
+<td class="hicell">time</td>
+<td class="hicell">-2</td>
+<td class="hicell"></td>
+<td class="hicell">Bamcrab, Vault108</td>
+</tr>
+<tr><td class="rankc">2</td>
+<td class="hicell">expedia</td>
+<td class="hicell">-5</td>
+<td class="hicell">Thraxina</td>
+<td class="hicell">GingerMagician, Vault108, Krampus, Crystal, BobVosh, P_Tiddy</td>
+</tr>
+<tr><td class="hirankc">1</td>
+<td class="hicell">yrel</td>
+<td class="hicell">-5</td>
+<td class="hicell">IlGnome</td>
+<td class="hicell">Vault108, Sigridirsson, supensa, Crystal, BobVosh, P_Tiddy</td>
+</tr>
+</table>
+   <br />
+   <table width="925" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Most referenced URLs</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table border="0" width="929"><tr>
+<td>&nbsp;</td><td class="tdtop"><b>URL</b></td>
+<td class="tdtop"><b>Number of Uses</b></td>
+<td class="tdtop"><b>Last Used by</b></td></tr>
+<tr><td class="hirankc">1</td>
+<td class="hicell"><a href="https://i.imgur.com/yVnIB6q.gif">https://i.imgur.com/yVnIB6q.gif</a></td>
+<td class="hicell">21</td>
+<td class="hicell">Shappie</td>
+</tr>
+<tr><td class="rankc">2</td>
+<td class="hicell"><a href="https://www.twitch.tv/kopachris">https://www.twitch.tv/kopachris</a></td>
+<td class="hicell">12</td>
+<td class="hicell">Kopachris</td>
+</tr>
+<tr><td class="rankc">3</td>
+<td class="hicell"><a href="https://chanstats.snoonet.org/%2523nightaudit.html">https://chanstats.snoonet.org/%23nightaudit.html</a></td>
+<td class="hicell">12</td>
+<td class="hicell">Statistics</td>
+</tr>
+<tr><td class="rankc">4</td>
+<td class="hicell"><a href="https://www.wunderground.com/weather/ca/leduc/53.268570%2C-113.543587">https://www.wunderground.com/weather/ca/leduc/53.268570,-113</a></td>
+<td class="hicell">11</td>
+<td class="hicell">[url]</td>
+</tr>
+<tr><td class="rankc">5</td>
+<td class="hicell"><a href="https://www.twitch.tv/grandmakj">https://www.twitch.tv/grandmakj</a></td>
+<td class="hicell">8</td>
+<td class="hicell">EberGnomerScrooge</td>
+</tr>
+</table>
+   <br />
+   <table width="925" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Other interesting numbers</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table width="929">
+<tr><td class="hicell">Nice opers here, no one got kicked!</td></tr>
+<tr><td class="hicell">Strange, no op was given on #Nightaudit!</td></tr>
+<tr><td class="hicell">Wow, no op was taken on #Nightaudit!</td></tr>
+<tr><td class="hicell"><b>Crystal</b> always lets us know what he/she's doing: 1003 actions!<br /><span class="small"><b>For example, like this:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Crystal is dieting</span>
+<br /><span class="small">Also, <b>Bachzag</b> tells us what's up with 293 actions.</span>
+</td></tr>
+<tr><td class="hicell"><b>Vault108</b> talks to him/herself a lot.  He/She wrote over 5 lines in a row 689 times!
+<br /><span class="small">Another lonely one was <b>Nattyfrank</b>, who managed to hit 653 times.</span>
+</td></tr>
+<tr><td class="hicell"><b>vault1</b> couldn't decide whether to stay or go.  1 joins during this reporting period!</td></tr>
+<tr><td class="hicell"><b>Vault911</b> has quite a potty mouth.  2.7% words were foul language.<br /><span class="small"><b>For example, like this:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Vault911&gt; OH SHIT PLEASE DRIVE</span>
+<br /><span class="small"><b>PapiChurro</b> also makes sailors blush, 2.5% of the time.</span>
+</td></tr>
+</table>
+   <br />
+   <table width="925" cellpadding="1" cellspacing="0" border="0">
+    <tr>
+     <td class="headlinebg">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0">
+       <tr>
+        <td class="headtext">Latest Topics</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+<table width="929">
+<tr><td class="hicell">A topic was never set on this channel.</td></tr>
+</table>
+<div id="totallines">Total number of lines: 733346.</div>
+<div id="footer" class="small">
+	<div id="stats_gen">Stats generated by <a href="https://pisg.github.io/" title="Go to the pisg homepage" class="background">pisg</a> v0.80-preview2</div>
+	<div id="stats_text">Stats generated in 00 hours 01 minutes and 07 seconds</div>
+</div>
+
+<!-- NFiles = "0"; Format = "weechat3"; Lang = "EN"; LangFile = "lang.txt"; Charset = "iso-8859-1"; LogCharset = ""; LogCharsetFallback = ""; LogPrefix = ""; LogSuffix = ""; NickTracking = "1"; TimeOffset = "+0" -->
+</div>
+</body>
+</html>
+
