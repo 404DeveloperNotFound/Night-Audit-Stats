@@ -3,4 +3,5 @@
 
 # ignore sh files
 .sh
-
+# ignore log
+.log
